@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Analytics Graph of Traffic</title>
+    <style media="screen">
+      *, html, body {
+        margin:  0;
+        padding: 0;
+        background: linear-gradient(to right,rgb(219, 255, 229),rgb(186, 255, 205));
+      }
+
+      canvas {
+        display: block;
+        color: rgba(150,255,178,1);
+      }
+
+      #wrapper {
+        width:  90%;
+        margin: 2em auto 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="" id="wrapper">
+      <div id="legend">
+
+      </div>
+      <canvas id="canvas"></canvas>
+      <div id="chart">
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.3.0/d3.min.js" integrity="sha512-NMhzM2RHzbCRO0s5VPaRC+2bW6nmNXimzC9p5sp2x19M+zzuSJ2T50dEQ7hpHkNjnX1mt8nQg1NNthwRZgsoIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="plotly.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+
+      d3.csv("https://raw.githubusercontent.com/Pyrexia02/Makerthon/main/trafficVehicles.csv")
+          .then(function(loadedData){
+            let data = [];
+            let labels = [];
+
+            for (let i=0; i<loadedData.length;i++){
+              let dateTime = loadedData[i].DateTime;
+              let vehicles = loadedData[i].Vehicles;
+              labels.push(dateTime);
+              data.push(vehicles);
+            }
+
+            let options = {
+              type:'line',
+              data: {
+                labels: labels,
+                datasets: [{
+                  label:"Traffic Dataset",
+                  data:data,
+                  fill:true,
+                  pointRadius:0,
+                  pointHoverRadius: 0,
+                  borderColor:'rgb(53, 252, 106)',
+                }]
+              }
+            };
+
+            let chart = new Chart(document.getElementById('canvas'),options);
+
+          });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Urban Transportation</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+      rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <!-------------------Start of Sidebar------------------->
+    <div class="container">
+      <aside class="">
+        <div class="top">
+          <div class="logo">
+            <img src="images/UM.png" alt="Logo">
+            <h2>Team <span class="danger">666</span> </h2>
+            <div class="close" id="close-btn">
+              <span class="material-icons-sharp">close</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="sidebar">
+          <a href="#" class="active">
+            <span class="material-icons-sharp">grid_view</span>
+            <h3>Dashboard</h3>
+          </a>
+          <a href="LineGraph/index.html" target=_blank class="">
+            <span class="material-icons-sharp">analytics</span>
+            <h3>Analytics</h3>
+          </a>
+          <a href="Reports/index.html" target=_blank class="">
+            <span class="material-icons-sharp">summarize</span>
+            <h3>Reports</h3>
+          </a>
+          <a href="#" class="">
+            <span class="material-icons-sharp">settings</span>
+            <h3>Settings</h3>
+          </a>
+        </div>
+      </aside>
+      <!-------------------End of Sidebar------------------->
+      <main>
+        <h1 style="color: #01b636;">Smart City - Green Urban Transportation</h1>
+        <div class="date">
+          <input type="date">
+        </div>
+        <div class="insights">
+          <!-----------------------Start of Sales----------------->
+          <div class="sales">
+            <span class="material-icons-sharp">directions_car</span>
+            <div class="middle">
+              <div class="left">
+                <h3>Cars In-Used</h3>
+                <h1 class="car-in-used">1,940,056</h1>
+              </div>
+              <div class="progress">
+                <svg id="animpath">
+                  <circle cx='38' cy='38' r='36'></circle>
+                </svg>
+                <div class="number">
+                  <p class="percentages">90%</p>
+                </div>
+              </div>
+            </div>
+            <small class="text-muted">Recent Updates</small>
+          </div>
+          <!------------------End of Sales---------------------->
+          <!-----------------------Start of Expenses----------------->
+          <div class="expenses">
+            <span class="material-icons-sharp">traffic</span>
+            <div class="middle">
+              <div class="left">
+                <h3>Traffic Delayed</h3>
+                <h1 class="trafficDelay">24 mins</h1>
+              </div>
+              <div class="progress">
+                <svg>
+                  <circle cx='38' cy='38' r='36'></circle>
+                </svg>
+                <div class="number">
+                  <p class="percentagess">64%</p>
+                </div>
+              </div>
+            </div>
+            <small class="text-muted">Recent Updates</small>
+          </div>
+          <!------------------End of Expenses---------------------->
+          <!-----------------------Start of Income----------------->
+          <div class="income">
+            <span class="material-icons-sharp">leaderboard</span>
+            <div class="middle">
+              <div class="left">
+                <h3>World Rank Congested Level</h3>
+                <h1 class="ranking">210/404</h1>
+              </div>
+              <div class="progress">
+                <svg>
+                  <circle cx='38' cy='38' r='36'></circle>
+                </svg>
+                <div class="number">
+                  <p class="percentagesss">51%</p>
+                </div>
+              </div>
+            </div>
+            <small class="text-muted">Recent Updates</small>
+          </div>
+          <!------------------End of Income---------------------->
+        </div>
+        <!--Start of Recent Order-->
+        <div class="recent-order">
+          <h2>Recent Implementation</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Product Name</th>
+                <th>Production</th>
+                <th>Product Number</th>
+                <th>Status</th>
+                <th>Date</th>
+              </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+          </table>
+          <a href="#">Show All</a>
+        </div>
+      </main>
+      <!--------------------------END OF MAIN-------------------------->
+      <div class="right">
+        <div class="top">
+          <button id="menu-btn">
+            <span class="material-icons-sharp">menu</span>
+          </button>
+          <div class="theme-toggler">
+            <span class="material-icons-sharp active">light_mode</span>
+            <span class="material-icons-sharp">dark_mode</span>
+          </div>
+          <div class="profile">
+            <div class="info">
+              <p>Hey,<b>Thong Xiang</b></p>
+              <small class="text-muted">User</small>
+            </div>
+            <div class="profile-photo">
+              <img src="images/thongxiang.jpg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="recent-updates">
+          <h2>Recent Updates</h2>
+          <div class="updates">
+            <div class="update">
+              <div class="profile-photo">
+                <img src="images/meta.jpg" alt="">
+              </div>
+              <div class="message">
+                <p><b>Meta</b> just contributed a Night lion tech GPS drone</p>
+                <small class="text-muted">2 Minutes Ago</small>
+              </div>
+            </div>
+            <div class="update">
+              <div class="profile-photo">
+                <img src="images/tesla.png" alt="">
+              </div>
+              <div class="message">
+                <p><b>Tesla</b> just contributed Microgrid Technology</p>
+                <small class="text-muted">5 Minutes Ago</small>
+              </div>
+            </div>
+            <div class="update">
+              <div class="profile-photo">
+                <img src="images/apple.png" alt="">
+              </div>
+              <div class="message">
+                <p><b>Apple</b> just contributed Three-Dimensional Greening Technology</p>
+                <small class="text-muted">10 Minutes Ago</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!------------------------END OF RECENT UPDATES---------------------->
+        <div class="sales-analytics">
+          <h2>Traffic Analytics</h2>
+          <div class="item online">
+            <div class="icon">
+              <span class="material-icons-sharp">emoji_transportation</span>
+            </div>
+            <div class="right">
+              <div class="info">
+                <h3>ROAD TRANSPORT</h3>
+                <small class="text-muted">Last 24 Hours</small>
+              </div>
+              <h5 class="danger">+39%</h5>
+              <h3>3849</h3>
+            </div>
+          </div>
+          <div class="item offline">
+            <div class="icon">
+              <span class="material-icons-sharp">directions_boat</span>
+            </div>
+            <div class="right">
+              <div class="info">
+                <h3>WATER TRANSPORT</h3>
+                <small class="text-muted">Last 24 Hours</small>
+              </div>
+              <h5 class="success">-17%</h5>
+              <h3>1100</h3>
+            </div>
+          </div>
+          <div class="item customers">
+            <div class="icon">
+              <span class="material-icons-sharp">flight</span>
+            </div>
+            <div class="right">
+              <div class="info">
+                <h3>AIR TRANSPORT</h3>
+                <small class="text-muted">Last 24 Hours</small>
+              </div>
+              <h5 class="danger">+25%</h5>
+              <h3>849</h3>
+            </div>
+          </div>
+          <!--
+          <div class="item add-product">
+              <div class="">
+                <span class="material-icons-sharp">add</span>
+                <h3>Add Information</h3>
+              </div>
+            </div>
+          -->
+        </div>
+      </div>
+
+    </div>
+    <script src="script.js" charset="utf-8"></script>
+  </body>
+</html>
